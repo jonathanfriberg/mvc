@@ -9,7 +9,7 @@ use Symfony\Component\Routing\Annotation\Route;
 class JsonAPI
 {
 
-    #[Route("/api/quote")]
+    #[Route("/api/quote", name: "api_quote")]
     public function jsonQuote(): Response
     {
         $quotes = [
