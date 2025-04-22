@@ -8,7 +8,6 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class JsonAPI
 {
-
     #[Route("/api/quote", name: "api_quote")]
     public function jsonQuote(): Response
     {
@@ -19,7 +18,7 @@ class JsonAPI
         ];
 
         $quote = $quotes[array_rand($quotes)];
-        
+
         $data = [
             'quote' => $quote,
             'date' => date('Y-m-d'),

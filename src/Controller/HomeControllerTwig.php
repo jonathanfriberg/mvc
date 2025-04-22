@@ -6,8 +6,8 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
-class HomeControllerTwig extends AbstractController{
-
+class HomeControllerTwig extends AbstractController
+{
     #[Route("/", name: "home")]
     public function home(): Response
     {
@@ -31,5 +31,4 @@ class HomeControllerTwig extends AbstractController{
     {
         return $this->render('api.html.twig');
     }
-
 }
